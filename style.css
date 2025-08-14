@@ -379,6 +379,10 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animate-gradient 2.5s linear infinite;
+  background-image: url("img/a.webp");
+  background-size: cover;       /* cover whole section */
+  background-position: center;  /* keep centered */
+  background-repeat: no-repeat;
 }
 
 .contact-section button {
@@ -391,6 +395,7 @@ header {
   box-shadow: 0 0 5px lightgray;
   cursor: pointer;
   transition: 0.3s;
+  align-items: center;
 }
 
 .contact-section button:hover {
