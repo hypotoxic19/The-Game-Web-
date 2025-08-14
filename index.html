@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <header>
+      <div class="head-left">
+        <img src="img/logo.png" alt="logo">
+        <button>Product</button>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="head-right" id="nav">
+        <a href="#">NEXUS</a>
+        <a href="#">VAULT</a>
+        <a href="#">ABOUT</a>
+        <a href="#">SERVICES</a>
+        <a href="#">CONTACT</a>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-vid">
+        <video loop autoplay muted playsinline class="hero-video">
+          <source src="videos/hero-1.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-info">
+          <h1>BOTULINUM</h1>
+          <p>Enter the metagame Layer Unleash the Play Economy</p>
+          <button>Watch Trailer</button>
+        </div>
+
+        <h1 class="gaming-text">TOXIN</h1>
+        <div class="next-btn">NEXT</div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+      <p>Welcome to Zentry</p>
+      <div class="autoBlur">
+        <h1>DISCOVER THE WORLD'S LARGEST SHARED ADVENTURE</h1>
+      </div>
+
+      <div class="image-box autoTakeFull">
+        <img src="img/about.webp" alt="about-image">
+      </div>
+
+      <h4>Game of Games begins - your life, now an epic MMORPG</h4>
+      <h5>Zentry unites every player from countless games and platforms, both digital and physical.</h5>
+    </section>
+
+    <!-- INFO SECTION -->
+    <section class="info-section">
+      <h3>Into the Metagame Layer</h3>
+      <p>A cross-platform metagame app, turning your activities across Web2 and Web3 games into a...</p>
+
+      <div class="info-cards">
+
+        <div class="card autoDisplay">
+          <h1>RADIANT</h1>
+          <p>An anime and gaming-inspired NFT collection the IP primed for expansion.</p>
+          <video src="videos/feature-1.mp4" autoplay loop muted playsinline></video>
+          <button>COMING SOON</button>
+        </div>
+
+        <div class="card autoDisplay">
+          <video src="videos/feature-2.mp4" autoplay loop muted playsinline></video>
+        </div>
+
+        <div class="card autoDisplay">
+          <video src="videos/feature-3.mp4" autoplay loop muted playsinline></video>
+        </div>
+
+        <div class="card autoDisplay">
+          <video src="videos/feature-4.mp4" autoplay loop muted playsinline></video>
+        </div>
+
+        <div class="card autoDisplay">
+          <video src="videos/feature-5.mp4" autoplay loop muted playsinline></video>
+        </div>
+
+        <div class="card autoDisplay">
+          <h1>COMING SOON</h1>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+      <p>Join Zentry</p>
+      <div class="autoBlur">
+        <h1>LET'S BUILD THE NEW ERA OF GAMING TOGETHER</h1>
+      </div>
+
+      <button>CONTACT US</button>
+
+      <img class="img1" src="img/swordman.webp" alt="contact_img">
+      <img class="img2" src="img/contact-1.webp" alt="contact-img">
+    </section>
+
+    <!-- FOOTER -->
+    <section class="footer">
+      <p>© Nova 2025. All rights reserved</p>
+
+      <ul>
+        <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+        <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+        <li><a href="#"><i class='bx bxl-github'></i></a></li>
+        <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
+      </ul>
+
+      <p>Privacy Policy</p>
+    </section>
+
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script src="app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.getElementById('hamburger');
+      const nav = document.getElementById('nav');
+
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        nav.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
